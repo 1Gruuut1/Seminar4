@@ -78,7 +78,7 @@ int Factorial(int num)
     int result = 1;
     while(num > 1)
         result *= num--;
-        
+
     return result;
 }
 
@@ -87,3 +87,37 @@ Console.Write("Input a number N: ");
 
 Console.WriteLine("Factorial is " + Factorial(Convert.ToInt32(Console.ReadLine())));
 */
+
+// Массивы:
+
+// Метод рандомной генерации массива:
+/*
+int[] CreateRandomArray(int size, int minVailue, int maxVailue)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minVailue, maxVailue + 1);
+
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+Console.Write("Input a length of new array: ");
+int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(length, min, max);
+ShowArray(myArray);
+*/
+
