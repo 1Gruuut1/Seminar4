@@ -77,15 +77,13 @@ int Factorial(int num)
 {
     int result = 1;
     while(num > 1)
-    {
-        result *= num;
-        num--;
-    }
+        result *= num--;
+        
     return result;
 }
 
 Console.Write("Input a number N: ");
-int namberN = Convert.ToInt32(Console.ReadLine());
+//int namberN = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Factorial is " + Factorial(namberN));
+Console.WriteLine("Factorial is " + Factorial(Convert.ToInt32(Console.ReadLine())));
 */
