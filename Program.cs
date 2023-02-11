@@ -121,3 +121,74 @@ int[] myArray = CreateRandomArray(length, min, max);
 ShowArray(myArray);
 */
 
+// Домашнее задание:
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+/*
+int StepNum(int numA, int numB)
+{
+    int step = 1;
+    for(int i = 1; i <= numB; i++)
+    {
+        step = step * numA;
+    }
+return step;
+}
+
+Console.Write("Input a number A: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a number B: ");
+int numB = Convert.ToInt32(Console.ReadLine());
+int step = StepNum(numA, numB);
+
+
+Console.WriteLine($"{numA} in degree {numB} = " + StepNum(numA, numB));
+
+*/
+
+ // Задача 27 Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*
+ int SumNum(int num)
+{
+    int result = 0;
+    while(num > 1)
+    {
+        result += num % 10;
+        num = num / 10;
+    }
+    return result;
+}    
+
+Console.Write("Input a number N: ");
+
+Console.WriteLine("Sum is " + SumNum(Convert.ToInt32(Console.ReadLine())));
+*/
+
+
+// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+/*
+int[] MyArray(int length)
+{
+    int[] array = new int[length];
+
+    for(int i = 0; i < length; i++)
+    {
+        Console.Write($"Input a namber {i} element ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    return array;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+Console.Write("Input a length of new array: ");
+int length = Convert.ToInt32(Console.ReadLine());
+int[] Array = MyArray(length);
+
+ShowArray(Array);
+*/
